@@ -1,0 +1,3 @@
+D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/snoreDetectAlgorithm.dir
+D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/ALL_BUILD.dir
+D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/ZERO_CHECK.dir

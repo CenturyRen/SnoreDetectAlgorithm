@@ -1,0 +1,10 @@
+^D:\FILES\CPPPRJ\SNOREDETECTALGORITHM\BUILD\CMAKEFILES\BEABC86402F7B0E994EA9349C767BF4C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/Files/CppPrj/snoreDetectAlgorithm -BD:/Files/CppPrj/snoreDetectAlgorithm/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Files/CppPrj/snoreDetectAlgorithm/build/snoreDetectAlgorithm.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
