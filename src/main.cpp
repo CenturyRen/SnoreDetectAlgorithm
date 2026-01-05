@@ -184,7 +184,10 @@ void saveToBinary(const std::vector<std::vector<float>>& data, const std::string
 
 
 
+vector<vector<float>>buildMFCC(AudioData originSignal,)
+{
 
+}
 
 int main()
 {
@@ -200,21 +203,26 @@ int main()
     }
     cout << "load success." << endl;
 
+
+    
     // 双声道转单声道
     vector<float> momoSignal = stereoToMono(originSignal.soungAudio);
-
     
     // 定义MFCC信息
     unsigned int sampleRate = originSignal.sampleRate;
-    int n_MFCC = 32;// 特征数设为32
-    int n_FFT  = 2048;// FFT系数数量
-    int win_Length = int(0.030 * sampleRate);// 窗口宽度（30ms的宽度）
-    int stepLength = int(momoSignal.size() / n_MFCC );
+
+    float stepTime     = 0.030;// 30ms
+    float stepDuration = 0.015;// 15ms重叠
+    // int n_MFCC = int(1.0f * momoSignal.size()/(sampleRate*stepTime));// 1秒以30毫秒均分，特征数设为32
     
-    // cout << n_MFCC << " " << win_Length << " " << stepLength << " " << endl;
+    int n_melFilter = 32;
+    int n_FFT  = 2048;// FFT系数数量
+    int win_Length = int(stepTime * sampleRate);// 窗口宽度（30ms的宽度）
+    // int stepLength = int(momoSignal.size() / n_MFCC );
+    int stepLength = int(stepDuration * sampleRate);
+    int n_MFCC = (momoSignal.size() - win_Length) / stepLength + 1;
     // 预加强
     vector<float> preE_Signal = preEmphasis(momoSignal);
-
 
     // 分帧
     vector<vector<float>> frameSplitSignal;
@@ -257,8 +265,8 @@ int main()
     vector<vector<float>> powerSpectrums;
     powerSpectrums.reserve(frameSplitSignal.size());
 
-    pocketfft::shape_t shape_in = { (size_t)n_FFT };
-    pocketfft::stride_t stride_in = { sizeof(float) };
+    pocketfft::shape_t  shape_in   = { (size_t)n_FFT };
+    pocketfft::stride_t stride_in  = { sizeof(float) };
     pocketfft::stride_t stride_out = { sizeof(complex<float>) };
 
     vector<complex<float>> fftOutput(spectrumSize);
@@ -298,29 +306,27 @@ int main()
     
     // 此时 powerSpectrums 就是你需要的“功率谱”，接下来可以传给 Mel 滤波器组了
     // cout << "功率谱计算完成，总帧数: " << powerSpectrums.size() << endl;
-    vector<vector<float>>melFilters = buildMELFilters(44100,powerSpectrums.size());
-
-
-
+    vector<vector<float>>melFilters = buildMELFilters(44100,n_melFilter);
 
     saveToBinary(powerSpectrums,"power.bin");
 
-    vector<vector<float>>result(32);
+    vector<vector<float>>result(powerSpectrums.size());
 
     cout << "powerSpectrums size:" << powerSpectrums.size() << " " << powerSpectrums[1].size() << endl;
     cout << "melFilters size:" << melFilters.size() << " " << melFilters[1].size() << endl;
 
     for(int i = 0; i < powerSpectrums.size(); ++i)
     {
-        for(int j = 0; j < powerSpectrums.size(); ++j)
+        for(int j = 0; j < n_melFilter; ++j)
         {
-            float val = 0;
+            float energy = 0;
             for(int k = 0; k < 1025; ++k)
             {
-                val += powerSpectrums[i].at(k) * melFilters[j].at(k);
+                energy += powerSpectrums[i][k] * melFilters[j][k];
                 // cout << val << " " << powerSpectrums[i].at(k) << " " << melFilters[j].at(k) << endl;
             }
-            result[i].push_back(val);   
+            if(energy < 1e-10) energy = 1e-10;
+            result[i].push_back(logf(energy));   
             
         }
     }
