@@ -4,6 +4,12 @@
     <ClCompile Include="D:\Files\CppPrj\snoreDetectAlgorithm\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Files\CppPrj\snoreDetectAlgorithm\src\buildMFCC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Files\CppPrj\snoreDetectAlgorithm\src\detectSnore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\Files\CppPrj\snoreDetectAlgorithm\CMakeLists.txt" />
