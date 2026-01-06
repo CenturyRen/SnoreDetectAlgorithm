@@ -31,9 +31,37 @@ void saveToBinary(const std::vector<std::vector<float>>& data, const std::string
 }
 
 
+/**
+ * 创建MFCC集
+ */
+void saveAllMFCC()
+{
+    
+    for(int label=0; label<=1; ++label)
+    {
+        std::string root = "D:/Files/PyPrj/SnoreDetectModel/SnoringDataset/" + std::to_string(label) + "/";
+        for (int i = 0; i < 449; ++i) { // 第二位数字
+            std::string filename = std::to_string(label) + "_" + std::to_string(i) + ".wav";
+                
+            std::string pathToPath = root + filename;
+
+            AudioData originSignal = readWav(pathToPath.c_str());
+            if (originSignal.soungAudio.empty()) {
+                printf("error 1");
+                return;
+            }
+            vector<vector<float>>result = buildMFCC(originSignal,0.030,0.015,32,2048,13);
+            saveToBinary(result,std::to_string(label) + "_" + std::to_string(i) + ".bin");
+            cout << "saved file:" << std::to_string(label) + "_" + std::to_string(i) + ".bin" << endl;
+        }
+    }
+}
+
 int main()
 {
 
+    // saveAllMFCC();
+    // return 0;
     int count = 0;
     std::string root = "D:/Files/PyPrj/SnoreDetectModel/SnoringDataset/1/";
     for (int i = 450; i < 499; ++i) { // 第二位数字

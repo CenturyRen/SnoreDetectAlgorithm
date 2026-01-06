@@ -269,6 +269,7 @@ vector<vector<float>>buildMFCC(const vector<float>& sound, int sampleRate ,float
         powerSpectrums.push_back(std::move(currentPowerSpec));
     }
 
+    // cout << powerSpectrums.size() << " " << powerSpectrums[0].size() << endl;
     // 此时 powerSpectrums 就是你需要的“功率谱”，接下来可以传给 Mel 滤波器组了
     // cout << "功率谱计算完成，总帧数: " << powerSpectrums.size() << endl;
     vector<vector<float>>melFilters = buildMELFilters(44100,n_melFilter);
@@ -368,7 +369,7 @@ vector<vector<float>>buildMFCC(AudioData &originSignal,float stepTime,float step
     vector<complex<float>> fftOutput(spectrumSize);
 
     vector<float> inputBuffer(n_FFT, 0.0f);
-    cout << "frame size:" << frameSplitSignal[1].size() << endl;
+    // cout << "frame size:" << frameSplitSignal[1].size() << endl;
     for (const auto& frame : frameSplitSignal) {
         
         size_t copyLen = min((size_t)n_FFT, frame.size());
