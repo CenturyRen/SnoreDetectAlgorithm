@@ -19,12 +19,12 @@
 ## 🚀 使用流程
 
 ## 1) MFCC集创建
-    使用函数void saveAllMFCC()获取MFCC结果的.bin文件
-    执行readMFCC.m读取MFCC结果的.bin文件获取C_snore与C_noise
-    （可选）执行detect_snore_vq.m测试C_snore与C_noise的效果
+* 使用函数void saveAllMFCC()获取MFCC结果的.bin文件
+* 执行readMFCC.m读取MFCC结果的.bin文件获取C_snore与C_noise
+* （可选）执行detect_snore_vq.m测试C_snore与C_noise的效果
 ---
 
 ## 2) 识别
 
-    使用函数bool detectSnore()获取鼾声结果
+* 使用函数bool detectSnore()获取鼾声结果
 ---
