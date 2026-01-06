@@ -3,7 +3,15 @@
 #include"detectSnore.h"
 
 using namespace std;
-
+template <int R, int C>
+std::vector<std::vector<float>> arrayToVector(const float (&arr)[R][C]) {
+    std::vector<std::vector<float>> result;
+    result.reserve(R);
+    for (int i = 0; i < R; ++i) {
+        result.emplace_back(arr[i], arr[i] + C);
+    }
+    return result;
+}
 
 // 计算两个向量之间的欧氏距离
 float euclidean_dist(const vector<float>& a, const vector<float>& b)
@@ -41,6 +49,7 @@ float total_dist(const std::vector<std::vector<float>>& mfccFeatures, const std:
 
 }
 
+
 bool detectSnore(const vector<vector<float>>& mfccFeatures,const vector<vector<float>>& C_snore, const vector<vector<float>>& C_noise) 
 {
     
@@ -54,3 +63,19 @@ bool detectSnore(const vector<vector<float>>& mfccFeatures,const vector<vector<f
     return total_dist_snore < total_dist_noise ? true : false;
 }
 
+bool detectSnore(const vector<vector<float>>& mfccFeatures)
+{
+    vector<vector<float>> C_snore = arrayToVector(snore_codebook); // 假设已经定义并填充了 C_snore  
+    vector<vector<float>> C_noise = arrayToVector(noise_codebook); // 假设已经定义并填充了 C_noise
+    return detectSnore(mfccFeatures,C_snore,C_noise);
+}
+
+bool detectSnore(AudioData originSignal)
+{
+    vector<vector<float>>result = buildMFCC(originSignal,0.030,0.015,32,2048,13);
+    return detectSnore(result);
+}
+bool detectSnore(const std::vector<float>& sound)
+{
+    return detectSnore(buildMFCC(sound));
+}

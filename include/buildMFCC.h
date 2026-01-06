@@ -28,3 +28,6 @@ vector<vector<float>> buildMELFilters(int sampleRate, int n_filter);
 
 
 vector<vector<float>>buildMFCC(AudioData &originSignal,float stepTime,float stepDuration,int n_melFilter,int n_FFT,int numCepstral);
+vector<vector<float>>buildMFCC(const vector<float>& sound, int sampleRate = 44100,float stepTime = 0.030 ,float stepDuration = 0.015, int n_melFilter = 32, int n_FFT = 2048, int numCepstral = 13);
+
+// vector<vector<float>>buildMFCC(const std::vector<float>& sound);

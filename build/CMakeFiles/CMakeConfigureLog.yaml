@@ -120,7 +120,7 @@ events:
       The output was:
       0
       閫傜敤浜?.NET Framework MSBuild 鐗堟湰 18.0.5+e22287bf1
-      鐢熸垚鍚姩鏃堕棿涓?2026/1/6 11:03:49銆?
+      鐢熸垚鍚姩鏃堕棿涓?2026/1/6 15:20:26銆?
       
       鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdC\\CompilerIdC.vcxproj鈥?榛樿鐩爣)銆?
       PrepareForBuild:
@@ -149,7 +149,7 @@ events:
           0 涓鍛?
           0 涓敊璇?
       
-      宸茬敤鏃堕棿 00:00:00.65
+      宸茬敤鏃堕棿 00:00:00.59
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -1020,7 +1020,7 @@ events:
       The output was:
       0
       閫傜敤浜?.NET Framework MSBuild 鐗堟湰 18.0.5+e22287bf1
-      鐢熸垚鍚姩鏃堕棿涓?2026/1/6 11:03:50銆?
+      鐢熸垚鍚姩鏃堕棿涓?2026/1/6 15:20:27銆?
       
       鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\4.1.1-msvc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
       PrepareForBuild:
@@ -1049,7 +1049,7 @@ events:
           0 涓鍛?
           0 涓敊璇?
       
-      宸茬敤鏃堕棿 00:00:00.59
+      宸茬敤鏃堕棿 00:00:00.58
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1469,8 +1469,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-wkw6y4"
-      binary: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-wkw6y4"
+      source: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-hxuy4b"
+      binary: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-hxuy4b"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1479,40 +1479,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-wkw6y4'
+        Change Dir: 'D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-hxuy4b'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3aa8a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4d7a6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 18.0.5+e22287bf1
-        鐢熸垚鍚姩鏃堕棿涓?2026/1/6 11:03:51銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/1/6 15:20:28銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkw6y4\\cmTC_3aa8a.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hxuy4b\\cmTC_4d7a6.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_3aa8a.dir\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_4d7a6.dir\\Debug\\鈥濄€?
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkw6y4\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_3aa8a.dir\\Debug\\cmTC_3aa8a.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hxuy4b\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_4d7a6.dir\\Debug\\cmTC_4d7a6.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_3aa8a.dir\\Debug\\cmTC_3aa8a.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_3aa8a.dir\\Debug\\cmTC_3aa8a.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_4d7a6.dir\\Debug\\cmTC_4d7a6.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_4d7a6.dir\\Debug\\cmTC_4d7a6.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_3aa8a.dir\\Debug\\\\" /Fd"cmTC_3aa8a.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_4d7a6.dir\\Debug\\\\" /Fd"cmTC_4d7a6.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.50.35720 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_3aa8a.dir\\Debug\\\\" /Fd"cmTC_3aa8a.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_4d7a6.dir\\Debug\\\\" /Fd"cmTC_4d7a6.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkw6y4\\Debug\\cmTC_3aa8a.exe" /INCREMENTAL /ILK:"cmTC_3aa8a.dir\\Debug\\cmTC_3aa8a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-wkw6y4/Debug/cmTC_3aa8a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-wkw6y4/Debug/cmTC_3aa8a.lib" /MACHINE:X64  /machine:x64 cmTC_3aa8a.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_3aa8a.vcxproj -> D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkw6y4\\Debug\\cmTC_3aa8a.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hxuy4b\\Debug\\cmTC_4d7a6.exe" /INCREMENTAL /ILK:"cmTC_4d7a6.dir\\Debug\\cmTC_4d7a6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-hxuy4b/Debug/cmTC_4d7a6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-hxuy4b/Debug/cmTC_4d7a6.lib" /MACHINE:X64  /machine:x64 cmTC_4d7a6.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_4d7a6.vcxproj -> D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hxuy4b\\Debug\\cmTC_4d7a6.exe
         FinalizeBuildStatus:
-          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_3aa8a.dir\\Debug\\cmTC_3aa8a.tlog\\unsuccessfulbuild鈥濄€?
-          姝ｅ湪瀵光€渃mTC_3aa8a.dir\\Debug\\cmTC_3aa8a.tlog\\cmTC_3aa8a.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wkw6y4\\cmTC_3aa8a.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_4d7a6.dir\\Debug\\cmTC_4d7a6.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_4d7a6.dir\\Debug\\cmTC_4d7a6.tlog\\cmTC_4d7a6.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hxuy4b\\cmTC_4d7a6.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
         宸叉垚鍔熺敓鎴愩€?
             0 涓鍛?
             0 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:00.58
+        宸茬敤鏃堕棿 00:00:00.57
         
       exitCode: 0
   -
@@ -1552,8 +1552,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-zpad2e"
-      binary: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-zpad2e"
+      source: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-k1h3fk"
+      binary: "D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-k1h3fk"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1563,40 +1563,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-zpad2e'
+        Change Dir: 'D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-k1h3fk'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f725f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8339d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 18.0.5+e22287bf1
-        鐢熸垚鍚姩鏃堕棿涓?2026/1/6 11:03:52銆?
+        鐢熸垚鍚姩鏃堕棿涓?2026/1/6 15:20:29銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zpad2e\\cmTC_f725f.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k1h3fk\\cmTC_8339d.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_f725f.dir\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_8339d.dir\\Debug\\鈥濄€?
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          姝ｅ湪鍒涘缓鐩綍鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zpad2e\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_f725f.dir\\Debug\\cmTC_f725f.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k1h3fk\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_8339d.dir\\Debug\\cmTC_8339d.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_f725f.dir\\Debug\\cmTC_f725f.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_f725f.dir\\Debug\\cmTC_f725f.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_8339d.dir\\Debug\\cmTC_8339d.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_8339d.dir\\Debug\\cmTC_8339d.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_f725f.dir\\Debug\\\\" /Fd"cmTC_f725f.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_8339d.dir\\Debug\\\\" /Fd"cmTC_8339d.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.50.35720 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_f725f.dir\\Debug\\\\" /Fd"cmTC_f725f.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_8339d.dir\\Debug\\\\" /Fd"cmTC_8339d.dir\\Debug\\vc145.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zpad2e\\Debug\\cmTC_f725f.exe" /INCREMENTAL /ILK:"cmTC_f725f.dir\\Debug\\cmTC_f725f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-zpad2e/Debug/cmTC_f725f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-zpad2e/Debug/cmTC_f725f.lib" /MACHINE:X64  /machine:x64 cmTC_f725f.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_f725f.vcxproj -> D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zpad2e\\Debug\\cmTC_f725f.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k1h3fk\\Debug\\cmTC_8339d.exe" /INCREMENTAL /ILK:"cmTC_8339d.dir\\Debug\\cmTC_8339d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-k1h3fk/Debug/cmTC_8339d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Files/CppPrj/snoreDetectAlgorithm/build/CMakeFiles/CMakeScratch/TryCompile-k1h3fk/Debug/cmTC_8339d.lib" /MACHINE:X64  /machine:x64 cmTC_8339d.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_8339d.vcxproj -> D:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k1h3fk\\Debug\\cmTC_8339d.exe
         FinalizeBuildStatus:
-          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_f725f.dir\\Debug\\cmTC_f725f.tlog\\unsuccessfulbuild鈥濄€?
-          姝ｅ湪瀵光€渃mTC_f725f.dir\\Debug\\cmTC_f725f.tlog\\cmTC_f725f.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-        宸插畬鎴愮敓鎴愰」鐩€淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zpad2e\\cmTC_f725f.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_8339d.dir\\Debug\\cmTC_8339d.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_8339d.dir\\Debug\\cmTC_8339d.tlog\\cmTC_8339d.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淒:\\Files\\CppPrj\\snoreDetectAlgorithm\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k1h3fk\\cmTC_8339d.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
         宸叉垚鍔熺敓鎴愩€?
             0 涓鍛?
             0 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:00.59
+        宸茬敤鏃堕棿 00:00:00.58
         
       exitCode: 0
   -

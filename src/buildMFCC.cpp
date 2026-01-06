@@ -188,6 +188,120 @@ vector<vector<float>> buildMELFilters(int sampleRate, int n_filter)
     return melFilters;
 }
 
+// vector<vector<float>>buildMFFCC(const <vector<float>& sound, int sampleRate = 44100,float stepTime = 0.030 ,float stepDuration = 0.015, int n_melFilter = 32, int n_FFT = 2048, int numCepstral = 13)
+vector<vector<float>>buildMFCC(const vector<float>& sound, int sampleRate ,float stepTime,float stepDuration , int n_melFilter, int n_FFT, int numCepstral)
+
+{
+
+    int win_Length = int(stepTime * sampleRate);// 窗口宽度（30ms的宽度）
+
+    int stepLength = int(stepDuration * sampleRate);
+    int n_MFCC = (sound.size() - win_Length) / stepLength + 1;
+    // 预加强
+    vector<float> preE_Signal = preEmphasis(sound);
+
+    // 分帧
+    vector<vector<float>> frameSplitSignal;
+    frameSplitSignal.reserve(n_MFCC); // 预留外层空间，提高效率
+
+    auto startIndex = preE_Signal.begin();
+    auto endIndex = startIndex;
+    for(int i = 0; i < n_MFCC; ++i)
+    {
+        endIndex = startIndex + win_Length;
+        frameSplitSignal.emplace_back(startIndex, endIndex);
+        startIndex += stepLength;
+    }
+
+    // 创建汉明窗，同时乘原始数据
+    vector<float> hammingWindow;
+    for(int i = 0; i < win_Length; ++i)
+    {
+        float hwValue = 0.54 - 0.46 * cos(2 * M_PI * i / (win_Length - 1));
+        hammingWindow.push_back(hwValue);
+    }
+
+    for(int i = 0; i < n_MFCC; ++i)
+    {
+        for(int j = 0; j < win_Length; ++j)
+        {
+            frameSplitSignal.at(i)[j] *= hammingWindow[j];
+        }
+    }
+
+    size_t spectrumSize = n_FFT / 2 + 1;
+    vector<vector<float>> powerSpectrums;
+    powerSpectrums.reserve(frameSplitSignal.size());
+
+    pocketfft::shape_t  shape_in   = { (size_t)n_FFT };
+    pocketfft::stride_t stride_in  = { sizeof(float) };
+    pocketfft::stride_t stride_out = { sizeof(complex<float>) };
+
+    vector<complex<float>> fftOutput(spectrumSize);
+
+    vector<float> inputBuffer(n_FFT, 0.0f);
+    for (const auto& frame : frameSplitSignal) {
+        
+        size_t copyLen = min((size_t)n_FFT, frame.size());
+        std::copy(frame.begin(), frame.begin() + copyLen, inputBuffer.begin());
+
+        if (copyLen < n_FFT) {
+            std::fill(inputBuffer.begin() + copyLen, inputBuffer.end(), 0.0f);
+        }
+
+        pocketfft::r2c<float>(
+            shape_in, stride_in, stride_out, 0, true,
+            inputBuffer.data(), fftOutput.data(), 1.0f
+        );
+
+        // --- 步骤 C: 计算功率谱 (Power Spectrum) ---
+        // 公式: P = |X[k]|^2 / N
+        vector<float> currentPowerSpec(spectrumSize);
+        float nFloat = (float)n_FFT;
+
+        for (size_t k = 0; k < spectrumSize; ++k) {
+            float real = fftOutput[k].real();
+            float imag = fftOutput[k].imag();
+
+            currentPowerSpec[k] = (real * real + imag * imag) / nFloat;
+        }
+        // 存入结果矩阵
+        powerSpectrums.push_back(std::move(currentPowerSpec));
+    }
+
+    // 此时 powerSpectrums 就是你需要的“功率谱”，接下来可以传给 Mel 滤波器组了
+    // cout << "功率谱计算完成，总帧数: " << powerSpectrums.size() << endl;
+    vector<vector<float>>melFilters = buildMELFilters(44100,n_melFilter);
+    vector<vector<float>>result(powerSpectrums.size());
+
+    for(int i = 0; i < powerSpectrums.size(); ++i)
+    {
+        for(int j = 0; j < n_melFilter; ++j)
+        {
+            float energy = 0;
+            for(int k = 0; k < 1025; ++k)
+            {
+                energy += powerSpectrums[i][k] * melFilters[j][k];
+                // cout << val << " " << powerSpectrums[i].at(k) << " " << melFilters[j].at(k) << endl;
+            }
+            if(energy < 1e-10) energy = 1e-10;
+            result[i].push_back(logf(energy));   
+        }
+    }
+
+    // 1. 创建 DCT 矩阵 (只做一次，放循环外)
+    vector<vector<float>> dctMatrix = createDCTMatrix(32, numCepstral);
+    // 2. 准备最终容器
+    vector<vector<float>> mfccResult;
+    mfccResult.reserve(result.size());
+    
+    for (const auto& fbankFrame : result) {
+        vector<float> mfccFrame = applyDCT(fbankFrame, dctMatrix);
+        mfccResult.push_back(mfccFrame);
+    }
+
+    return mfccResult;
+}
 /**创建mfcc
  * originSignal:读取出的音频结构体
  * stepTime:窗口长度（ms）
